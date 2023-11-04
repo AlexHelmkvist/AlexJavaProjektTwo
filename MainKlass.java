@@ -23,7 +23,7 @@ public class MainKlass {
             TextReader.TextReaderLine(line);
         }
 
-
+        System.out.println("Hej");
         System.out.println("Antal rader: " + processor.getLineCount());
         System.out.println("Antal tecken: " + processor.getCharCount());
 
