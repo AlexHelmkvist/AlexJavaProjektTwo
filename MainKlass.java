@@ -23,3 +23,5 @@ public class MainTentaTest {
         System.out.println("Antal tecken: " + tx.getCharCount());
 
     }
+
+}
