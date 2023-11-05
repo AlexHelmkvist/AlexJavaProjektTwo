@@ -36,7 +36,7 @@ class TextProcessorTest {
 
     }
     @Test
-    public void testNewLine(){                             //<--- Testa att lägga till en ny värde.
+    public void testNewLine(){                            //<--- Testa att lägga till en ny värde.
         TextProcessor tx = new TextProcessor();
         tx.textProcessor("Hej Världen");
         assertEquals("Hej Världen",tx.setNewLine());
