@@ -28,11 +28,31 @@ class TextProcessorTest {
     }
 
     @Test
-    public void testAddEmptyline() {                           //<--- Testa att textProcessor-metoden hanterar tomma rader.
+    public void testAddEmptyline() {                     //<--- Testa att textProcessor-metoden hanterar tomma rader.
         TextProcessor tx = new TextProcessor();
         tx.textProcessor("");
         assertEquals(1,tx.getLineCount());
         assertEquals(0,tx.getCharCount());
 
     }
+    @Test
+    public void testNewLine(){                            //<--- Testa att lägga till en ny värde.
+        TextProcessor tx = new TextProcessor();
+        tx.textProcessor("Hej Världen");
+        assertEquals("Hej Världen",tx.setNewLine());
+    }
+    @Test
+    public void testLineCount(){                            //<--- Testa att det går att räkna antal rader i en ny värde.
+        TextProcessor tx = new TextProcessor();
+        tx.textProcessor("Hej Världen");
+        assertEquals(1,tx.getLineCount());
+    }
+    @Test
+    public void testCharCount(){                             //<--- Testa att det går att räkna antal tecken i en ny värde.
+        TextProcessor tx = new TextProcessor();
+        tx.textProcessor("Hej Världen");
+        assertEquals(11,tx.getCharCount());
+    }
+
+
 }

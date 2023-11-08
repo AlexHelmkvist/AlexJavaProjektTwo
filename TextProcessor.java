@@ -1,7 +1,7 @@
 package TentaProgramering;
 
 
-// Klass för att räkna raderna och ha koll på antalet tecken
+// Klass för att räkna raderna och ha koll på antalet tecken.
 class TextProcessor {
 
     private int lineCount = 0;
@@ -20,6 +20,12 @@ class TextProcessor {
     public int getCharCount() {
         return charCount;
     }
+
+    public String setNewLine (){
+        return "Hej Världen";
+
+    }
+
 
 
 }
