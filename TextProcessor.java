@@ -21,8 +21,6 @@ class TextProcessor {
         return charCount;
     }
 
-    public String setNewLine(){
-        return "Hej Världen";
-    }
+
 }
 
