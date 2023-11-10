@@ -21,6 +21,5 @@ class TextProcessor {
         return charCount;
     }
 
-
 }
 
